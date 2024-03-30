@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Raleway", sans-serif;
+  }
+  .hero-div {
+    background-image: url("../assets/bannerHero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.slick-slide > div {
+  margin: 0 5px;
+}
+
+.slick-arrow {
+  display: none;
+}
+
+@media screen and (max-width:480px) {
+
+    .hero-div{
+        background-size: auto;
+        background-position: 23% 50%;
+    }
+}
