@@ -42,7 +42,7 @@ const About = () => {
             </select>
 
             <select name="browseHomes" id="browseHomes"  className='p-5 w-full'>
-                <option value="" >Browse Homes</option>
+                <option value="">Browse Homes</option>
                 <option value="California">California</option>
                 <option value="texas">Texas</option>
                 <option value="NY">New York</option>

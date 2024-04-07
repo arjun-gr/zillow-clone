@@ -1,23 +1,23 @@
-import Nav from "./components/Nav";
-import Hero from "./components/Hero";
-import Main from "./components/Main";
-import Browse from "./components/Browse";
-import Selling from "./components/Selling";
-import About from "./components/About";
-import Footer from "./components/Footer";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Home from "./pages/Home";
+import Buy from "./pages/Buy";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/homes",
+    element: <Buy/>,
+  },
+]);
 
 const App = () => {
-  return (
-    <div>
-      <Nav />
-      <Hero />
-      <Main />
-      <Browse />
-      <Selling />
-      <About />
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
