@@ -9,7 +9,7 @@ const Nav = () => {
   }
 
   return (
-    <div className="bg-white-500 sm:px-20 lg:px-80">
+    <div className="bg-white-500 py-2 sm:px-20 lg:px-80 border">
       <nav className="flex justify-center lg:justify-between items-center">
         <ul className="lg:flex  gap-8 items-center hidden lg:block cursor-pointer">
           <li
@@ -161,8 +161,9 @@ const Nav = () => {
             )}
           </li>
         </ul>
-
-        <img src={zillow} alt="zillow-logo" className="w-40" />
+        
+        <Link to="/">
+        <img src={zillow} alt="zillow-logo" className="w-40" /></Link>
 
         <ul className="lg:flex gap-8 items-center hidden lg:block">
           <li
